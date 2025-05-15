@@ -21,7 +21,7 @@ app.use('/graphql', graphqlHTTP({
     rootValue: resolvers,
     graphiql: true, // interface pour tester
   }));
-mongoose.connect('mongodb://mongo-user:27017/users', {
+mongoose.connect('mongodb://mongo-user:27018/users', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => {
